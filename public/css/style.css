@@ -1,0 +1,54 @@
+body{
+    background: #34495e;
+}
+.bx{
+    box-shadow: 2px 2px 18px rgba(0,0,0,0.2);
+}
+.card-border{
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    border:0px;
+}
+
+.navcolor a{
+    color: white;
+}
+
+.img-fluid{
+    position: absolute;
+    background-size: cover;
+}
+
+.table{
+    border-radius: 15px ;
+}
+
+.simple-transition a{
+    position: relative;
+    color:#fff;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+}
+
+.simple-transition a + a{
+    margin-left: 1rem;
+}
+
+.simple-transition a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    transform-origin: bottom left;
+    background-color: #f34d4d;
+}
+
+.simple-transition a:hover::after{
+    transform-origin: bottom right;
+    transform: scale(1);
+}
+
+
